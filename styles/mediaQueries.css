@@ -1,0 +1,119 @@
+@media (min-width:0px) and (max-width:767px){
+    header .info-container{
+        display: none;
+    }
+
+    header .ham-menu{
+        display: flex;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header .extra-details-container{
+        display: none;
+    }
+
+    .carousel-section{
+        justify-content: center;
+        gap : 40px;
+    }
+    .carousel-section .details-container input{
+        font-size: 16px;
+    }
+
+    .carousel-section .details-container button{
+        font-size: 16px;
+    }
+
+    .carousel-section .image-container{
+        box-shadow: none;
+    }
+    .products-container .option{
+        font-size: 16px;
+        padding : 10px;
+        border-radius: 20px;
+        background-color: var(--secondary-color);
+        min-width: 80px;
+        max-width: 100px;
+        flex : 1;
+        text-align: center;
+        color : var(--text-dark-grey);
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .products-container
+    .active{
+        background-color: var(--primary-color);
+        color : white;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+     header .info-container{
+        display: none;
+    }
+
+    header .ham-menu{
+        display: flex;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header .extra-details-container{
+        display: none;
+    }
+    .carousel-section{
+        flex-direction: column;
+        justify-content: center;
+        gap : 40px;
+    }
+    .carousel-section .details-container input{
+        font-size: 16px;
+    }
+
+    .carousel-section .details-container button{
+        font-size: 16px;
+    }
+
+    .carousel-section .image-container{
+        min-width: 300px;
+        box-shadow: none;
+    }
+    .products-container .option{
+        font-size: 16px;
+        padding : 10px;
+        border-radius: 20px;
+        background-color: var(--secondary-color);
+        min-width: 80px;
+        max-width: 100px;
+        flex : 1;
+        text-align: center;
+        color : var(--text-dark-grey);
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .products-container
+    .active{
+        background-color: var(--primary-color);
+        color : white;
+    }
+
+    .banner-container{
+        flex-direction: column;
+    }
+    
+}
+
+@media (prefers-color-scheme: dark){
+    
+}
+
+@media (prefers-color-scheme: light) {
+    
+}
