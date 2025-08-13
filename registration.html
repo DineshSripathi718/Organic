@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/mediaQueries.css">
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="title">
+                Organic
+            </div>
+            <div class="ham-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">shop</a>
+                    </li>
+                    <li>
+                        <a href="">shop details</a>
+                    </li>
+                    <li>
+                        <a href="">blogs</a>
+                    </li>
+                    <li>
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="extra-details-container">
+                <ul>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="title">Register</h1>
+        <form id="registrationForm">
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                <div class="name-error error"></div>
+                <div class="name-success success"></div>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+
+                <div class="email-error  error"></div>
+                <div class="email-success success"></div>
+            </div>
+            <div>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phonenumber">
+
+                <div class="phone-error error"></div>
+                <div class="phone-success success"></div>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+
+                <div class="password-error error"></div>
+                <div class="password-success success"></div>
+            </div>
+            <div>
+                <input type="password" name="recheckPassword" id="recheckPassword"  placeholder=" RE- Enter your password">
+            </div>
+             <div class="recheckPassword-error error"></div>
+                <div class="recheckPassword-success success"></div>
+            <div class="button-container">
+                <button type="submit">SignUP</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
+<script src="./scripts/register.js"></script>
+</html>

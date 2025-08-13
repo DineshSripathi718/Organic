@@ -1,0 +1,73 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .title{
+    background : linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    color : transparent;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    gap : 10px; 
+}
+
+main form input{
+    max-width: 800px;
+    padding : 10px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border : 1px solid transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+}
+
+main form .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 10px;
+}
+
+main form button{
+    font-size: 1.2em;
+    padding : 10px;
+    cursor: pointer;
+}
+
+main form button:nth-child(1){
+    background-color: var(--primary-color);
+    color : white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+main form button:nth-child(2){
+    background-color: var(--secondary-color);
+    color : black;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+main .error{
+    max-width: 300px;
+    width: 100%;
+    color : red;
+    display: flex;
+    flex-direction: column;
+}
+
+main .error ul{
+    color : red;
+    display: flex;
+    flex-direction: column;
+}
+
+main .success{
+    max-width: 300px;
+    width: 100%;
+    color : green;
+}

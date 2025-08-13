@@ -83,12 +83,12 @@ main{
     gap : 20px;
     border-radius: 10px;
     min-width: 250px;
+    cursor: pointer;
 }
 
 .cards-container .image{
-    background-color: var(--secondary-color);
-    color : white;
-    font-size: 40px;
+    color : var(--primary-color);
+    font-size: 2.2em;
 }
 
 .cards-container .title{
@@ -174,6 +174,16 @@ main{
     transition : box-shadow .5s  linear, border-color .5s linear;
     border : 1px solid transparent;
     cursor: pointer;
+    animation : slide-down .5s linear;
+}
+
+@keyframes slide-down{
+    from{
+        transform : scale(.5);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .product-items-container .banner{
@@ -195,7 +205,7 @@ main{
 }
 
 .product-items-container .title{
-    font-size: 30px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -233,11 +243,19 @@ main{
 
 .item-container .image-container{
     overflow: hidden;
+    max-height: 200px;
 }
 
 .item-container:hover{
     border-color: var(--secondary-color);
     box-shadow: 0px 0px 20px black;
+}
+
+.item-container .read-more{
+    font-size: inherit;
+    background-color: inherit;
+    color : black;
+    border : none;
 }
 
 .veg-containers .containers{

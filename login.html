@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/mediaQueries.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+    <script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="title">
+                Organic
+            </div>
+            <div class="ham-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">shop</a>
+                    </li>
+                    <li>
+                        <a href="">shop details</a>
+                    </li>
+                    <li>
+                        <a href="">blogs</a>
+                    </li>
+                    <li>
+                        <a href="">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="extra-details-container">
+                <ul>
+                    <li>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./registration.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="title">Login</div>
+        <div class="message"></div>
+        <form id="loginform">
+            <div>
+                <label for="phone">Enter your phone number : </label>
+                <input type="tel" name="phone" id="phone" placeholder="98xxxxxx" required>
+            </div>
+            <div>
+                <label for="password">
+                    Enter your password : 
+                </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form-button-container">
+                <button type="submit">Sign In</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        copyright
+    </footer>
+</body>
+<script src="./scripts/login.js"></script>
+<script src="./scripts/header.js"></script>
+</html>

@@ -3,16 +3,25 @@
         display: none;
     }
 
+    header{
+        position: relative;
+    }
+
     header .ham-menu{
         display: flex;
     }
 
-    header nav{
+    header nav,
+    header .extra-details-container{
+        position: absolute;
+        top : 100%;
         display: none;
     }
 
-    header .extra-details-container{
-        display: none;
+    header ul{
+        display: flex;
+        flex-direction: column;
+        padding : 0px;
     }
 
     .carousel-section{
