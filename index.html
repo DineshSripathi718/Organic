@@ -8,6 +8,9 @@
      <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/mediaQueries.css">
+    <link rel="stylesheet" href="./styles/toast.css">
+
+    <script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -42,13 +45,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
                         <a href="">shop</a>
-                    </li>
-                    <li>
-                        <a href="">shop details</a>
                     </li>
                     <li>
                         <a href="">blogs</a>
@@ -66,11 +66,17 @@
                         </button>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="./wishlist.html" class="wishlist">
+                            <i class="fa-solid fa-heart"></i>
                         </a>
                     </li>
                     <li>
+                        <a href="./cart.html" class="cart">
+                            <div class="cart-item-count"></div>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                    <li class="user-detail">
                         <a href="./login.html">
                             <i class="fa-solid fa-user"></i>
                         </a>
@@ -263,9 +269,10 @@
                 </div>
             </div>
         </section>
+        <div class="toast-bar"></div>
     </main>
     <footer></footer>
 </body>
-<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
+<script src="./scripts/header.js"></script>
 <script src="./scripts/index.js"></script>
 </html>

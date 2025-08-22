@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/mediaQueries.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/cart.css">
 
     <script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>   
 </head>
@@ -49,9 +49,6 @@
                         <a href="">shop</a>
                     </li>
                     <li>
-                        <a href="">shop details</a>
-                    </li>
-                    <li>
                         <a href="">blogs</a>
                     </li>
                     <li>
@@ -67,12 +64,18 @@
                         </button>
                     </li>
                     <li>
-                        <a href="./cart.html">
+                        <a href="./wishlist.html" class="wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cart.html" class="cart">
+                            <div class="cart-item-count"></div>
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </li>
                     <li class="user-detail">
-                        <a href="./registration.html">
+                        <a href="./login.html">
                             <i class="fa-solid fa-user"></i>
                         </a>
                     </li>
@@ -81,29 +84,10 @@
         </div>
     </header>
     <main>
-        <div class="title">Login</div>
-        <div class="message"></div>
-        <form id="loginform">
-            <div>
-                <label for="phone">Enter your phone number : </label>
-                <input type="tel" name="phone" id="phone" placeholder="98xxxxxx" required>
-            </div>
-            <div>
-                <label for="password">
-                    Enter your password : 
-                </label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div class="form-button-container">
-                <button type="submit">Sign In</button>
-                <button type="reset">Cancel</button>
-            </div>
-        </form>
+        <div id="root"></div>
     </main>
-    <footer>
-        copyright
-    </footer>
+    <footer></footer>
 </body>
-<script src="./scripts/login.js"></script>
+<script src="./scripts/cart.js"></script>
 <script src="./scripts/header.js"></script>
 </html>

@@ -1,0 +1,57 @@
+main .toast-bar{
+    position : fixed;
+    bottom : 10%;
+    right: 10%;
+}
+
+main .toast-bar .toast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    min-width: 100px;
+    width: 100%;
+    height: 60px;
+    padding : 10px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    border : 1px solid transparent;
+    box-shadow: 0px 0px 10px black;
+    position: relative;
+}
+
+main .toast-bar .toast::after{
+    content : "";
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom : 0;
+    left : 0;
+    right: 0;
+    animation: slide-left 1.8s linear forwards;
+}
+
+@keyframes slide-left {
+    to{
+        width: 0%;
+    }
+}
+
+main .toast-bar .error{
+    background-color: rgba(255, 0, 0, 0.321);
+    color : rgb(0, 0, 0);
+}
+
+main .toast-bar .error::after{
+    background-color: rgb(255, 0, 0);
+}
+
+main .toast-bar .success{
+    background-color: rgba(0, 128, 0, 0.387);
+    color : black;
+}
+
+main .toast-bar .success::after{
+    background-color: green;
+}

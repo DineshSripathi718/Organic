@@ -484,3 +484,16 @@ main{
     transform : translateX(-40%) translateY(-20%);
 }
 
+
+header .cart{
+    position: relative;
+}
+
+header .cart .cart-item-count{
+    position : absolute;
+    top : -100%;
+    left : 50%;
+    transform: translate(-50%);
+    padding : 10px;
+    color : red;
+}

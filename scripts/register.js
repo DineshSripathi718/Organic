@@ -6,6 +6,21 @@ const users = JSON.parse(localStorage.getItem("users")) || [];
 console.log(users);
 
 
+function displayToast(message, status){
+    console.log(message);
+    const toastBar = document.querySelector('.toast-bar');
+    const toastContainer = document.createElement('div');
+    toastContainer.classList.add('toast');
+    toastContainer.classList.add(status);
+    
+    toastContainer.innerText = message;
+
+    toastBar.append(toastContainer);
+    setTimeout(() => {
+        toastContainer.style.display = 'none';
+    },1800);
+}
+
 document.getElementById('registrationForm').addEventListener('submit', (event) => {
     event.preventDefault();
     
@@ -35,23 +50,44 @@ document.getElementById('registrationForm').addEventListener('submit', (event) =
             email : email,
             password : password,
             phone : phone,
-            cart : []
+            cart : [],
+            wishlist : []
         };
+
+        // sendDataToBackend(JSON.stringify(jsonFormData));
 
         users.push(jsonFormData);
         console.log(users);
 
         localStorage.setItem("users", JSON.stringify(users));    
 
+        displayToast("Login Successful, redirecting to login page", "success");
+
         setTimeout(() => {
             window.location.href = "/login.html";
         }, 2000);
         
     }else{
-        alert("not able to submit");
+        displayToast("Not able to submit the form", "error");
     }
     
 });
+
+async function sendDataToBackend(data){
+    console.log(data);
+    const url = "http://localhost:8080/student/register";
+    const header = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: data
+    };
+
+    const response = await fetch(url, header);
+    const view = await response.text();
+    console.log(view);
+}
 
 function validateFormData({name, email, phone, password, recheckPassword}){
 
